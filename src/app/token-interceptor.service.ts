@@ -26,8 +26,3 @@ export class TokenInterceptorService implements HttpInterceptor {
 }
 }
 
-
-function tokenizedReq(tokenizedReq: any): Observable<HttpEvent<any>> {
-  throw new Error('Function not implemented.');
-}
-
