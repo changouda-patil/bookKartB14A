@@ -8,13 +8,17 @@ import { AuthService } from './auth.service';
 import { AuthGuard } from './auth.guard';
 import { RegisterComponent } from './register/register.component';
 import { WishlistComponent } from './wishlist/wishlist.component';
+import { AddtocartComponent } from './addtocart/addtocart.component';
+import { CartComponent } from './cart/cart.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
-    WishlistComponent
+    WishlistComponent,
+    AddtocartComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
