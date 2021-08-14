@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'bookKartB14A';
+  title = 'ClientApp';
+
+  constructor(private authService: AuthenticationService) {
+    if (!localStorage.getItem('authToken')) {
+      this.authService.setTempUserId();
+    }
+    this.authService.setUserDetails();
+  }
 }
+
+

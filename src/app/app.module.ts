@@ -7,12 +7,14 @@ import { TokenInterceptorService } from './token-interceptor.service';
 import { AuthService } from './auth.service';
 import { AuthGuard } from './auth.guard';
 import { RegisterComponent } from './register/register.component';
+import { WishlistComponent } from './wishlist/wishlist.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    RegisterComponent
+    RegisterComponent,
+    WishlistComponent
   ],
   imports: [
     BrowserModule,
